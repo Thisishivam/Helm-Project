@@ -1,0 +1,12 @@
+replicacount: 1
+
+spec:
+  type: NodePort
+
+container:
+  name: demo-chart
+  image: thisishivam/helm-project:vi
+
+ports:
+  port: 8000
+  nodePort: 30007
